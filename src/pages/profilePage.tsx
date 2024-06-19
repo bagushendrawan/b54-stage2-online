@@ -1,12 +1,10 @@
 import { ThreadCard } from "@/features/home/components/thread-card";
 import { ThreadEntity } from "@/features/home/entities/thread";
-import { useHomePage } from "@/hooks/use-home-page";
-import { BsImage } from "react-icons/bs";
 import { api } from "@/libs/api";
-import { Flex, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, FormControl, FormHelperText, Input, Text, Heading, Textarea, ModalFooter, IconButton, Spinner, Divider, Box, Image, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Divider, Flex, FormControl, FormHelperText, Heading, IconButton, Image, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, Textarea, useDisclosure } from "@chakra-ui/react";
 import { useQuery } from "@tanstack/react-query";
-import Axios from 'axios'
 import { useEffect } from "react";
+import { BsImage } from "react-icons/bs";
 
 type editProfileForm = {
     photoProfile?: string,

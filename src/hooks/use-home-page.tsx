@@ -5,7 +5,6 @@ import { api } from "@/libs/api";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { AxiosError } from "axios";
-import { useEffect } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 export const useHomePage = () => {
